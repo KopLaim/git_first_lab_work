@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1764665967 source:c:\users\huawei\desktop\Ñ++\git_hub\main.cpp
+	<iostream>
+	<string>
+	<vector>
+	<fstream>
+
