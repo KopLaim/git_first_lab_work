@@ -8,8 +8,13 @@ using namespace std;
 void ReadFromFile(){
 
 }
-void ShowOnScreen(){
-
+void ShowOnScreen(const vector <string>& actors){
+    cout << "List of male actors in their file" << endl;
+    cout << "---------------------------------" << endl;
+    for (const auto& actor : actors){
+        cout << actor << endl;
+    };
+    cout <<"----------------------------------" << endl;
 }
 
 void WriteToFile(){
@@ -18,9 +23,9 @@ void WriteToFile(){
 
 int main()
 {
-
+vector <string> actor;
     ReadFromFile();
-    ShowOnScreen();
+    ShowOnScreen(actor);
     WriteToFile();
 
     cout << "Hello world!" << endl;
