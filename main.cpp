@@ -15,14 +15,6 @@ vector<string> ReadFromFile(const string& filename) {
             actors.push_back(actorName);
         }
         file.close();
-        cout << "\n=== Info from vector ===" << endl;
-        for (size_t i = 0; i < actors.size(); i++) {
-            cout << "actors[" << i << "] = \"" << actors[i] << "\"" << endl;
-        }
-        cout << "Elements: " << actors.size() << endl;
-        cout << "============================================\n" << endl;
-    } else {
-        cout << "ERROR: " << filename << endl;
         }
 
 
