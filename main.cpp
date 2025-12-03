@@ -20,6 +20,14 @@ vector<string> ReadFromFile(const string& filename) {
 
     return actors;
 }
+void ShowOnScreen(const vector <string>& actors){
+    cout << "List of male actors in their file" << endl;
+    cout << "---------------------------------" << endl;
+    for (size_t i = 0; i < actors.size(); i++) {
+        cout << i + 1 << ". " << actors[i] << endl;
+    }
+    cout << "-------------------------------" << endl;
+    cout << "All actors:" << actors.size() << endl;
 
 
 void ShowOnScreen(){
@@ -41,6 +49,10 @@ void WriteToFile(const vector<string>& actors, const string& filename) {
 
 int main()
 {
+    ReadFromFile();
+    ShowOnScreen(actors);
+    WriteToFile();
+
     vector<string> actors = ReadFromFile("file.txt");
 
 
