@@ -28,13 +28,16 @@ void WriteToFile(const vector<string>& actors, const string& filename) {
 int main()
 {
 
-
+    vector <string> actors;
 
     const string outputFile = "actors_output.txt";
 
     ReadFromFile();
+
     ShowOnScreen();
 
-    cout << "Hello world!" << endl;
+    WriteToFile(actors, outputFile);
+
+    cout << "End of programm!" << endl;
     return 0;
 }
