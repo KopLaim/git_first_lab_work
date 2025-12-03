@@ -11,10 +11,11 @@ void ReadFromFile(){
 void ShowOnScreen(const vector <string>& actors){
     cout << "List of male actors in their file" << endl;
     cout << "---------------------------------" << endl;
-    for (const auto& actor : actors){
-        cout << actor << endl;
-    };
-    cout <<"----------------------------------" << endl;
+    for (size_t i = 0; i < actors.size(); i++) {
+        cout << i + 1 << ". " << actors[i] << endl;
+    }
+    cout << "-------------------------------" << endl;
+    cout << "All actors:" << actors.size() << endl;
 }
 
 void WriteToFile(){
@@ -23,11 +24,9 @@ void WriteToFile(){
 
 int main()
 {
-vector <string> actor;
     ReadFromFile();
-    ShowOnScreen(actor);
+    ShowOnScreen(actors);
     WriteToFile();
 
-    cout << "Hello world!" << endl;
     return 0;
 }
